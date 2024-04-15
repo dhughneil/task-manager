@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-    <div>Task Manager</div>
+    <div>This is the list of tasks</div>
   );
 }

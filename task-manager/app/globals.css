@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Custom background color */
+body {
+    background-color: #d1d5db; /* Replace with your desired shade of gray */
+  }
 
 
 
