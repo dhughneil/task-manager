@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaRegCheckSquare } from "react-icons/fa";
+import { FaPlus, FaFilter, FaRegCheckSquare } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -11,10 +11,14 @@ const NavBar = () => {
       <ul className="flex space-x-6">
         <li className="text-green-700">David's Task Manager</li>
         <li>
-          <button className="hover:text-red-600 transition-colors">Add</button>
+        <button className="flex items-center hover:text-red-600 transition-colors">
+        <span className="mr-2"><FaPlus /></span> Add
+          </button>
         </li>
         <li>
-          <button className="hover:text-red-600">Filter</button>
+          <button className="flex items-center hover:text-red-600">
+          <span className="mr-2"><FaFilter /></span> Filter
+          </button>
         </li>
         <li>{"(Add search bar element here)"}</li>
       </ul>
