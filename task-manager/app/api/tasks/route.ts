@@ -5,7 +5,7 @@ import prisma from "@/prisma/client";
 const createTaskSchema = z.object({
   title: z.string().min(1).max(255),
   description: z.string().max(255),
-  dueDate: z.date(),
+  dueDate: z.string(),
 });
 
 export async function POST(request: NextRequest) {
@@ -18,7 +18,8 @@ export async function POST(request: NextRequest) {
     data: { 
         title: body.title, 
         description: body.description, 
-        dueDate: body.dueDate }
+        dueDate: body.dueDate 
+    } // ternirary opererator added
   })
 
   return NextResponse.json(newTask, { status: 201 })

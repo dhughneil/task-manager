@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Button } from "@radix-ui/themes";
 
 const page = () => {
   return (
     <>
-    <div>Add Task</div>
-    <button className='btn btn-border-warning'>Add</button>
-    <button type="button" className="btn btn-primary">Primary</button>
+      <div>
+        <Button>Add Task</Button>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;
